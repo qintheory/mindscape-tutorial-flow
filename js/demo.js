@@ -114,7 +114,6 @@ function updateNodes(d, i) {
         .on("end", dragended))
     ;
     
-
     text.exit()
         .remove();
     
@@ -289,6 +288,7 @@ function tick() {
 
 function transform(d) {
   return "translate(" + d.x + "," + d.y + ")";
+  zoom(svg);    
 }    
 
 // MAKING ARC as links    
